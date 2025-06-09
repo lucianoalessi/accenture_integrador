@@ -1,0 +1,8 @@
+USE sales_accenture;
+
+DROP FUNCTION IF EXISTS calculate_age;
+
+CREATE FUNCTION calculate_age(birth_date DATE)
+RETURNS INT
+DETERMINISTIC
+RETURN TIMESTAMPDIFF(YEAR, birth_date, CURDATE());

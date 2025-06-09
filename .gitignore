@@ -1,2 +1,21 @@
-/data
+# Ignorar datos y archivos sensibles
+/data/
 .env
+/venv/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+*.sqlite3
+*.log
+*.bak
+*.swp
+*.swo
+*.tmp
+*.csv
+*.xlsx
+*.db
+.idea/
+.vscode/
+# Ignorar archivos de Jupyter temporales
+*.nbconvert.ipynb

@@ -1,4 +1,4 @@
-class sale:
+class Sale:
     def __init__(self, sales_id, sales_person_id, customer_id, product_id, quantity, discount, total_price, sales_date, transaction_number):
         self.sales_id = sales_id
         self.sales_person_id = sales_person_id
@@ -11,4 +11,4 @@ class sale:
         self.transaction_number = transaction_number
 
     def is_high_value(self):
-        return self._total_price >= 1000
+        return self.total_price >= 1000
